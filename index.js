@@ -8,7 +8,7 @@ process.env.TZ = "UTC";
 
 var myModule = {
   dostuff: function (cb) {
-    request('http://cns.me/ho/example.json', function (error, response, body) {
+    request('https://raw.githubusercontent.com/chrisns/techtest/master/example.json', function (error, response, body) {
       if (!error && response.statusCode == 200) {
         var data = JSON.parse(body);
         data = _.map(data, function (item) {

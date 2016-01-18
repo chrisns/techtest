@@ -13,10 +13,10 @@ describe('technical test', function () {
     myModule.dostuff(function (response) {
       expect(response).to.eql({
         "dates": [
-          "Sat Oct 04 2014 07:57:00 GMT+0100 (BST)",
-          "Fri Apr 03 2015 23:02:00 GMT+0100 (BST)",
-          "Tue Feb 25 2014 15:26:00 GMT+0000 (GMT)",
-          "Wed Mar 19 2014 19:49:00 GMT+0000 (GMT)"
+          "Sat Oct 04 2014 07:57:00 GMT+0000 (UTC)",
+          "Fri Apr 03 2015 23:02:00 GMT+0000 (UTC)",
+          "Tue Feb 25 2014 15:26:00 GMT+0000 (UTC)",
+          "Wed Mar 19 2014 19:49:00 GMT+0000 (UTC)"
         ],
         "emails": [
           "pansy.hogan@zillacom.com",

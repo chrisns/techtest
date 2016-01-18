@@ -4,6 +4,8 @@ var _ = require('lodash');
 var moment = require('moment');
 require('moment-range');
 
+process.env.TZ = "UTC";
+
 var myModule = {
   dostuff: function (cb) {
     request('http://cns.me/ho/example.json', function (error, response, body) {

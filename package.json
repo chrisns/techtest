@@ -18,14 +18,18 @@
     "sinon": "^4.0.0",
     "sinon-as-promised": "^4.0.0",
     "sinon-chai": "^2.8.0",
+    "snyk": "^1.41.1",
     "superagent": "^3.6.1"
   },
   "devDependencies": {
     "mocha": "^3.5.3"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
